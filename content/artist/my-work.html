@@ -61,7 +61,7 @@
                                                     <a href="#"><span>My story</span></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><span>What I do?</span></a>
+                                                    <a href="what-i-do.html"><span>What I do?</span></a>
                                                 </li>
                                                 <li>
                                                     <a href="my-work.html"><span>My work</span></a>
@@ -458,42 +458,40 @@
                 </div>
             </div>
         </div>
-        <footer id="Footer" class="clearfix">
-            <div class="widgets_wrapper" style="padding:70px 0">
-                <div class="container">
-                    <div class="column one">
-                        <aside class="widget widget_text">
-                            <div class="textwidget">
-                                <div style="margin: 0 20%; text-align:center">
-                                    <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
-                                        <div class="image_wrapper">
-                                        	<img class="scale-with-grid" src="images/home_artist_footer_logo.png" alt="img">
+       <footer id="Footer" class="clearfix">
+                <div class="widgets_wrapper" style="padding:70px 0">
+                    <div class="container">
+                        <div class="column one">
+                            <aside class="widget widget_text">
+                                <div class="textwidget">
+                                    <div style="margin: 0 20%; text-align:center">
+                                        <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
+                                            <div class="image_wrapper">
+                                                <img class="scale-with-grid" src="content/artist/images/home_artist_footer_logo.png" alt="img">
+                                            </div>
                                         </div>
+                                        <hr class="no_line" style="margin:0 auto 20px">
+                                        <p>
+                                            I paint flowers so they cannot die.
+                                        </p>
                                     </div>
-                                    <hr class="no_line" style="margin:0 auto 20px">
-                                    <p>
-                                        Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.
-                                    </p>
                                 </div>
-                            </div>
-                        </aside>
-                    </div>
-                </div>
-            </div>
-            <div class="footer_copy">
-                <div class="container">
-                    <div class="column one">
-                        <div class="copyright">
-                            &copy; 2017 BeArtist - Muffin group - HTML by <a target="_blank" rel="nofollow" href="http://bit.ly/1M6lijQ">BeantownThemes</a>
+                            </aside>
                         </div>
-                        <ul class="social"></ul>
                     </div>
                 </div>
-            </div>
-        </footer>
-    </div>
-    
-    <!-- Side Menu -->
+                <div class="footer_copy">
+                    <div class="container">
+                        <div class="column one">
+                            <div class="copyright">
+                                &copy; 2019 Sarah Arts - by <a target="_blank" rel="nofollow" href="#">Yassin</a>
+                            </div><ul class="social"></ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- Side Menu -->
     <div id="Side_slide" class="right dark">
         <div class="close-wrapper">
             <a href="#" class="close"><i class="icon-cancel-fine"></i></a>
@@ -501,6 +499,7 @@
         <div class="menu_wrapper"></div>
     </div>
     <div id="body_overlay"></div>
+    
 
     <!-- JS -->
     <script src="../../js/jquery-2.1.4.min.js"></script>
@@ -512,30 +511,83 @@
     <script src="../../js/translate3d.js"></script>
     <script src="../../js/scripts.js"></script>
 
+    
+    
+    
+    <script>
+                                
+                                var tpj = jQuery;
+                                var revapi4;
+                                tpj(document).ready(function() {
+                                    if (tpj("#rev_slider_4_1").revolution == undefined) {
+                                        revslider_showDoubleJqueryError("#rev_slider_4_1");
+                                    } else {
+                                        revapi4 = tpj("#rev_slider_4_1").show().revolution({
+                                            sliderType : "standard",
+                                            sliderLayout : "auto",
+                                            dottedOverlay : "none",
+                                            delay : 9000,
+                                            navigation : {
+                                                onHoverStop : "off",
+                                            },
+                                            visibilityLevels : [1240, 1024, 778, 480],
+                                            gridwidth : 1920,
+                                            gridheight : 1250,
+                                            lazyType : "none",
+                                            parallax : {
+                                                type : "scroll",
+                                                origo : "enterpoint",
+                                                speed : 400,
+                                                levels : [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 51, 55],
+                                            },
+                                            shadow : 0,
+                                            spinner : "spinner2",
+                                            stopLoop : "off",
+                                            stopAfterLoops : -1,
+                                            stopAtSlide : -1,
+                                            shuffle : "off",
+                                            autoHeight : "off",
+                                            disableProgressBar : "on",
+                                            hideThumbsOnMobile : "off",
+                                            hideSliderAtLimit : 0,
+                                            hideCaptionAtLimit : 0,
+                                            hideAllCaptionAtLilmit : 0,
+                                            debugMode : false,
+                                            fallbacks : {
+                                                simplifyAll : "off",
+                                                nextSlideOnWindowFocus : "off",
+                                                disableFocusListener : false,
+                                            }
+                                        });
+                                    }
+                                });
+                                /*]]>*/
+                            </script>
+    
+    
     <script id="mfn-dnmc-retina-js">
-        jQuery(window).load(function () {
-            var retina = window.devicePixelRatio > 1 ? true : false;
-            if (retina) {
-                var retinaEl = jQuery("#logo img.logo-main");
-                var retinaLogoW = retinaEl.width();
-                var retinaLogoH = retinaEl.height();
-                retinaEl.attr("src", "images/retina-artist.png").width(retinaLogoW).height(retinaLogoH);
-                var stickyEl = jQuery("#logo img.logo-sticky");
-                var stickyLogoW = stickyEl.width();
-                var stickyLogoH = stickyEl.height();
-                stickyEl.attr("src", "images/retina-artist.png").width(stickyLogoW).height(stickyLogoH);
-                var mobileEl = jQuery("#logo img.logo-mobile");
-                var mobileLogoW = mobileEl.width();
-                var mobileLogoH = mobileEl.height();
-                mobileEl.attr("src", "images/retina-artist.png").width(mobileLogoW).height(mobileLogoH);
-                var mobileStickyEl = jQuery("#logo img.logo-mobile-sticky");
-                var mobileStickyLogoW = mobileStickyEl.width();
-                var mobileStickyLogoH = mobileStickyEl.height();
-                mobileStickyEl.attr("src", "images/retina-artist.png").width(mobileStickyLogoW).height(mobileStickyLogoH);
-            }
-        });
-    </script>
+            jQuery(window).load(function() {
+                var retina = window.devicePixelRatio > 1 ? true : false;
+                if (retina) {
+                    var retinaEl = jQuery("#logo img.logo-main");
+                    var retinaLogoW = retinaEl.width();
+                    var retinaLogoH = retinaEl.height();
+                    retinaEl.attr("src", "content/artist/images/retina-artist.png").width(retinaLogoW).height(retinaLogoH);
+                    var stickyEl = jQuery("#logo img.logo-sticky");
+                    var stickyLogoW = stickyEl.width();
+                    var stickyLogoH = stickyEl.height();
+                    stickyEl.attr("src", "content/artist/images/retina-artist.png").width(stickyLogoW).height(stickyLogoH);
+                    var mobileEl = jQuery("#logo img.logo-mobile");
+                    var mobileLogoW = mobileEl.width();
+                    var mobileLogoH = mobileEl.height();
+                    mobileEl.attr("src", "content/artist/images/retina-artist.png").width(mobileLogoW).height(mobileLogoH);
+                    var mobileStickyEl = jQuery("#logo img.logo-mobile-sticky");
+                    var mobileStickyLogoW = mobileStickyEl.width();
+                    var mobileStickyLogoH = mobileStickyEl.height();
+                    mobileStickyEl.attr("src", "content/artist/images/retina-artist.png").width(mobileStickyLogoW).height(mobileStickyLogoH);
+                }
+            });
+        </script>
 
-</body>
-
+    </body>
 </html>
